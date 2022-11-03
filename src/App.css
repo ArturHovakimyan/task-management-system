@@ -1,38 +1,49 @@
 .App {
-  text-align: center;
+ display: flex;
+ justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-contener{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  border: 3px solid gray;
+  border-radius: 10px;
+  margin: 5px;
+  max-width: 25%;
+  min-width: 22%;
+  padding: 10px;
+}
+.task-contener p{
+  color: gray;
+}
+.editMod-box{
+  width: 100vw;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(31, 25, 25, 0.356);
+  position: fixed;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.editMod{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: green;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editMod button{
+  width: 70px;
+  height: 20px;
+  margin: 5px;
+}
+.editMod input{
+  margin-bottom: 5px;
 }
